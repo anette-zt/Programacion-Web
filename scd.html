@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 - Galería de Imágenes</title>
+    <style>
+        body {
+            background-color: #e8f0f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Imagen grande */
+        .imagen-principal img {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .imagen-principal img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Galería inferior */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .galeria img {
+            width: 230px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Práctica 4: Galería de Paisajes</h1>
+
+    <!-- Imagen principal -->
+    <div class="imagen-principal">
+        <img src="https://picsum.photos/id/1018/600/400" alt="Montañas al amanecer">
+        <p>Montañas al amanecer</p>
+    </div>
+
+    <!-- Galería inferior -->
+    <div class="galeria">
+        <img src="https://picsum.photos/id/1021/600/400" alt="Lago entre bosques">
+        <img src="https://picsum.photos/id/1022/600/400" alt="Valle verde con nubes">
+        <img src="https://picsum.photos/id/1024/600/400" alt="Playa al atardecer">
+        <img src="https://picsum.photos/id/1036/600/400" alt="Cascada escondida">
+        <img src="https://picsum.photos/id/1043/600/400" alt="Campo de flores">
+        <img src="https://picsum.photos/id/1050/600/400" alt="Desierto al amanecer">
+        <img src="https://picsum.photos/id/1069/600/400" alt="Bosque nevado">
+    </div>
+
+</body>
+</html>
