@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Estudiante</title>
+  <style>
+    body { 
+      background-image: url("https://img.freepik.com/vector-gratis/fondo-ensueno-estetico-vector-cielo-nublado-purpura-diseno-brillo_53876-156334.jpg?semt=ais_hybrid&w=740&q=80");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: #000;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Registro de Estudiante</h2>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad">
+    <br><br>
+
+    <label for="carrera">Carrera:</label>
+    <select id="carrera" name="carrera">
+      <option value="Ingenieria en sistemas computacionales">Ingeniería en Sistemas Computacionales</option>
+      <option value="Ingenieria Industrial">Ingeniería Industrial</option>
+      <option value="Administración de empresas">Administración de Empresas</option>
+      <option value="Derecho">Derecho</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+</html>
